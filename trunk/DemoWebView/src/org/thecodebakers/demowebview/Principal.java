@@ -35,8 +35,8 @@ public class Principal extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         WebView myWebView = (WebView) findViewById(R.id.webview);
-        myWebView.loadUrl("file:///android_asset/www/index.html");
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.addJavascriptInterface(new TCBInterface(this), "Android");
+        myWebView.loadUrl("file:///android_asset/www/index.html");
     }
 }
