@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Gerador de desculpas furadas</title>
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" charset="utf-8">
+function generate(i) {
+    var paraRetornar;
+    var contexto = {"inicioCtx" : ["Devido", 
+                                       "O dia do julgamento final est&aacute; pr&oacute;ximo e temos que nos adaptar",
+                                       "Nos reportando",
+                                       "Nossa lideran&ccedil;a de mercado foi desafiada devido",
+                                       "Devido &agrave; sinergia dos membros da nossa rede de valor agregado, que quer se adaptar",
+                                       "Visando",
+                                       "Ouvindo atentamente nossos clientes e tendo em vista"],
+                          "meioCtx" : [" &agrave;s novas necessidades do mercado, ",
+                                        " a crescente converg&ecirc;ncia virtual, ",
+                                        " &agrave; nova estrat&eacute;gia do nosso principal competidor, ",
+                                        " &agrave; iniciativa de novos mercados globais, ",
+                                        " aos paradigmas de computa&ccedil;&atilde;o em nuvem, ", 
+                                        " ao \"empowerment\" dos mercados emergentes, ",
+                                        " &agrave;s iniciativas proativas de agrega&ccedil;&atilde;o de valor, "],
+                          "fimCtx"    : ["um novo paradigma surgiu",
+                                        "vivenciar experi&ecirc;ncias hol&Iacute;sticas &eacute; uma realidade",
+                                        "um novo ROI global se faz necess&aacute;rio",
+                                        "a din&acirc;mica do mercado mudou",
+                                        "novos pensamentos laterais s&atilde;o necess&aacute;rios",
+                                        "nossos objetivos devem ser realinhados com nossas necessidades de neg&oacute;cio",
+                                        "a desintermedia&ccedil;&atilde;o da nossa cadeia de valor aconteceu",
+                                        "surgiu a necessidade de atender novas parcerias de valor agregado"]};
+    var oQuePrecisamos = {"inicioPrec" : [", ent&atilde;o, &eacute; necess&aacute;rio",
+                                  ", logo, o que precisamos &eacute; de",
+                                  ", ent&atilde;o, uma vis&atilde;o sin&eacute;rgica e alavancada exige",
+                                  ", portanto, uma vis&atilde;o sin&eacute;rgica e estrat&eacute;gica demanda",
+                                  ", logo, uma abordagem renovada e melhorada exige", 
+                                  ", e o novo contexto necessita de"],
+                      "meioPrec": [" empodeirar as ideias proativas",
+                                  " uma nova estrat&eacute;gia de \"market share\"",
+                                  " abra&ccedil;ar a converg&ecirc;ncia de miss&atilde;o cr&iacute;tica",
+                                  " alavancar a converg&ecirc;ncia digital pelas redes sociais",
+                                  " um novo pensamento estrat&eacute;gico focado em m&Iacute;dias interativas",
+                                  " um novo e maximizado esfor&ccedil;o colaborativo inter-oper&aacute;vel"],
+                      "fimPrec"   : [", atrav&eacute;s vis&atilde;o 360 graus deste novo paradigma. ",
+                                  ", criando parcerias ub&iacute;quas. ", 
+                                  ", evitando um planejamento restritivo. ",
+                                  ", e refletir a&ccedil;&otilde;es inovativas. "]};
+    var concusao = {"inicioConc" : ["Para atender a esta demanda, ",
+                                    "Para sermos consistentes com o novo cen&aacute;rio, ",
+                                    "Atualizando nossa vis&atilde;o pr&eacute;via, ",
+                                    "Pensando na \"big picture\", "],
+                         "meioConc": ["novas a&ccedil;&otilde;es alavancadoras s&atilde;o necess&aacute;rias",
+                                    "uma nova estrat&eacute;gia sin&eacute;rgica e sem atritos precisa ser difundida", 
+                                    "precisamos convergir nossos esfor&ccedil;os de forma colaborativa",
+                                    "uma alavancagem na nossa cadeia de valor &eacute; necess&aacute;ria",
+                                    "vis&otilde;es de pensamento lateral precisam ser adotadas"],
+                         "fimConc"   : [", e um novo prazo real&iacute;stico deve ser estabelecido.",
+                                    ", para sermos consistentes, nosso or&ccedil;amento deve ser realinhado com as novas estrat&eacute;gias de neg&oacute;cio.",
+                                    ", portanto, a sinergia estrat&eacute;gica global do mercado requer prazo e custo atualizados.",
+                                    ", ent&atilde;o, precisamos liberar nossas mentes da mediocridade das limita&ccedil;&otilde;es de tempo e dinheiro."]};
+
+    var rinicioCtx = Math.floor(Math.random() * ((contexto.inicioCtx.length-1) - 0 + 1) + 0);
+    var rMidleCC = Math.floor(Math.random() * ((contexto.meioCtx.length-1) - 0 + 1) + 0);
+    var rfimCtx = Math.floor(Math.random() * ((contexto.fimCtx.length-1) - 0 + 1) + 0);
+
+    var rinicioPrec = Math.floor(Math.random() * ((oQuePrecisamos.inicioPrec.length-1) - 0 + 1) + 0);
+    var rmeioPrec = Math.floor(Math.random() * ((oQuePrecisamos.meioPrec.length-1) - 0 + 1) + 0);
+    var rfimPrec = Math.floor(Math.random() * ((oQuePrecisamos.fimPrec.length-1) - 0 + 1) + 0);
+
+    var rinicioConc = Math.floor(Math.random() * ((concusao.inicioConc.length-1) - 0 + 1) + 0);
+    var rmeioConc = Math.floor(Math.random() * ((concusao.meioConc.length-1) - 0 + 1) + 0);
+    var rfimConc = Math.floor(Math.random() * ((concusao.fimConc.length-1) - 0 + 1) + 0);
+
+    paraRetornar = contexto.inicioCtx[rinicioCtx] + 
+               contexto.meioCtx[rMidleCC] + 
+               contexto.fimCtx[rfimCtx] + 
+               oQuePrecisamos.inicioPrec[rinicioPrec] + 
+               oQuePrecisamos.meioPrec[rmeioPrec] + 
+               oQuePrecisamos.fimPrec[rfimPrec] + 
+               concusao.inicioConc[rinicioConc] + 
+               concusao.meioConc[rmeioConc] + 
+               concusao.fimConc[rfimConc];
+
+    return paraRetornar;
+}
+
+function compartilhar() {
+	var assunto = "Querido(a) chefe!";
+	var texto = document.getElementById("output").innerText;
+	Android.share(assunto,texto);
+}
+
+</script>
+</head>
+<body>
+
+<h3>Gerador de desculpas furadas</h3>
+
+<div id="output">
+</div>
+<br/>
+<input type="button" value="Gerar"
+       onclick="document.getElementById('output').innerHTML = generate()" />
+<input type="button" value="Compartilhar"
+       onclick="compartilhar()" />
+<div id="imagem" style="max-width: 100%">
+<br/><a href="http://www.thecodebakers.org"><img src="logo.png" border="0" style="max-width:100%"/></a>
+</div>
+</body>
+</html>
