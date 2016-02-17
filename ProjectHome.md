@@ -1,0 +1,1 @@
+This is a pure Android Version of a Mobile Web App.
